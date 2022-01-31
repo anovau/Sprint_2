@@ -1,0 +1,118 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+$input-btn-border-width: 2px;
+$accordion-button-active-bg: none;
+$accordion-icon-active-color: $secondary;
+$accordion-icon-color: $primary;
+$accordion-button-active-color: black;
+$accordion-button-focus-box-shadow: none;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn-primary:hover {
+    background:#FFFFFF;
+    color: #5265E1;
+}
+.btn-secondary:hover {
+    background:#FFFFFF;
+    color:#FA5959;
+}
+.btn-secondary {
+    color: white;
+    padding-inline: 2rem;
+}
+.nav-item {
+    margin-inline: 1rem;
+}
+.nav-item:hover {
+    color:#FA5959;
+}
+p {
+    color: grey;
+    font-size: 16px;
+}
+.imagen1 {
+    z-index: 2;
+}
+.figure1 {
+    top: -300px;
+    left: 150px;
+    z-index: 1;
+    //width: 670px;
+}
+.figure3 {
+    top: -200px;
+    right: 150px;
+    z-index: 1;
+}
+.figure2 {
+    top: -300px;
+    right: 150px;
+    z-index: 1;
+}
+.nav-tabs .nav-link.active {
+    color: black;
+    background-color: white;
+    border: none;
+    border-bottom: 4px solid #FA5959;
+}
+.nav-link:hover {
+    color: #FA5959;
+    border: 0px; 
+}
+.nav-link {
+    color: grey;
+}
+.card-img-top {
+    height:100px;
+    width:100px;
+}
+
+.border1 {
+    border-bottom: rgb(172, 170, 170);
+    border-style: none none dotted none;
+    border-width:5px; 
+}
+.accordion-button:hover{
+    color: #FA5959
+}
+.accordion-button::after {
+    background-image: url(/Imagenes/icon-arrow.svg);
+}
+
+@media (min-width: 600px) {
+    .firefox {
+        margin-top: 40px;
+    }
+    .opera {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 600px) {
+
+    .figure1{
+    top: -200px;
+    left: 100px;
+    z-index: 1;
+
+    }
+    .figure2{
+    top: -150px;
+    right: 50px;
+    z-index: 1;
+    }
+    .figure3{
+    top: -130px;
+    right: 50px;
+    z-index: 1;
+    }
+    .card {
+        margin: 0 auto;
+     }
+    .firefox {
+        margin-top: 20px;
+    }
+    .opera {
+        margin-top: 20px;
+    }
+}
